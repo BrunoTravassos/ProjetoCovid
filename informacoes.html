@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="author" content="Bruno, Carolinna, Elis, Margareth e Ricardo"> -->
+    <title>Informações</title>
+    <link rel="stylesheet" href="css/ocupacao.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="js/footer-ocupacao.js"></script> -->
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#"><img src="img/logo_teste.png" alt="" id="logo_img"></a>
+            <div class="menu-hamburguer">
+                <div id="lin1"></div>
+                <div id="lin2"></div>
+                <div id="lin3"></div>
+            </div>
+            <ul class="lista_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="cadastro.html">Cadastro de Vacinação</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Ocupação</a></li>
+                <li><a href="#tabs-2">Vacinação</a></li>
+            </ul>
+            <div id="tabs-1">
+                <section id="cabecalho-tabs1">
+                    <h1>Situação atual da ocupação de leitos UTI e Enfermaria
+                        na cidade de Catu</h1>
+                </section>
+                <section id="principal">
+                    <section id="sec1">
+                        <h3 id="h3_sec1">Ocupação nas UTI's</h3>
+                        <div id="box1">
+                            <input type="text" id="inp1" placeholder="Uti %"
+                                title="Digite a taxa de ocupação nas UTI's">
+                        </div>
+                    </section>
+                    <section id="sec2">
+                        <h3 id="h3_sec2">Ocupação Enfermarias</h3>
+                        <div id="box2">
+                            <input type="text" id="inp2" placeholder="Enfermaria %"
+                                title="Digite a taxa de ocupação nas Enfermarias">
+                        </div>
+                    </section>
+                    <section id="sec3">
+                        <h3>Taxa de Ocupação</h3>
+                        <div id="box1">
+                            <input type="text" id="inp3" placeholder="%">
+                        </div>
+                    </section>
+                </section>
+
+                <section id="setores">
+                    <section id="publicos">
+                        <h3 id="h3_sec1">Espaços Publicos</h3>
+                    </section>
+                    <section id="imobiliarias">
+                        <h3 id="h3_sec2">Imobiliarias</h3>
+                    </section>
+                    <section id="concessionarias">
+                        <h3>Concessionarias</h3>
+                    </section>
+                    <section id="escritorios">
+                        <h3 id="h3_sec1">Escritorios</h3>
+                    </section>
+                    <section id="bares">
+                        <h3 id="h3_sec2">Bares, Restaurantes</h3>
+                    </section>
+                    <section id="comercio">
+                        <h3>Comércio</h3>
+                    </section>
+                    <section id="shopping">
+                        <h3 id="h3_sec1">Shopping Center</h3>
+                    </section>
+                    <section id="beleza">
+                        <h3 id="h3_sec2">Salão de Beleza</h3>
+                    </section>
+                    <section id="academia">
+                        <h3>Academia</h3>
+                    </section>
+                    <section id="teatro">
+                        <h3 id="h3_sec1">Teatro, Cinemas</h3>
+                    </section>
+                    <section id="eventos">
+                        <h3 id="h3_sec2">Eventos Esportivos</h3>
+                    </section>
+                    <section id="educacao_Transp">
+                        <h3>Educação e Transportes</h3>
+                    </section>
+                </section>
+            </div>
+            <div id="tabs-2">
+                <section id="cabecalho-tabs2">
+                    <h1>Situação atual da vacinação na cidade de Catu</h1>
+                </section>
+                <section id="principal_tab2">
+                    <section id="box_vacina1">
+                        <h3 id="h1_sec1_tab2">Numero de Vacinados 1º fase:</h3>
+                        <div id="box1t2">
+                            <h1>30000</h1>
+                        </div>
+                    </section>
+                    <section id="box_vacina2">
+                        <h3 id="h1_sec2_tab2">Numero de Vacinados 2º fase:</h3>
+                        <div id="box2t2">
+                            <h1>15000</h1>
+                        </div>
+                        <div id="box2">
+                        </div>
+                    </section>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div class="divs_footer">
+            <img src="img/logo.png" alt="" id="logo_footer">
+            <p id="horario"><b>Horário de funcionamento</b><br>
+                Segunda à Sexta das 8h00 às 12h00 - 13h00 às 17h00</p>
+        </div>
+        <div class="divs_footer" id="div_links">
+            <p><b>REDES SOCIAIS</b><br>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+            </div>
+            </p>
+            <span id="date"></span>
+        </div>
+        <div class="divs_footer">
+            <p><b>LOCALIZAÇÃO</b></p>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241800.1143953087!2d-38.59876785890574!3d-12.918372750139989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604dc8d54f173%3A0x2d217c80cddf77fe!2sPrefeitura%20Municipal%20de%20Salvador!5e0!3m2!1spt-BR!2sbr!4v1629514077830!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+   
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+   
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="./js/ocupacao.js" ></script>
+</body>
+
+</html>

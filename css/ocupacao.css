@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+#logo_img {
+    width: 100%;
+    height: 20vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #0487D9;
+    height: 20vh;
+}
+
+.lista_nav {
+    list-style: none;
+    display: flex;
+}
+
+.lista_nav li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    /* margin-top: 7.5vh; */
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-hamburguer div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+        /*se algo sai da tela ele esconde */
+    }
+    .lista_nav {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        width: 100vw;
+        height: 32vh;
+        background: #0487D9;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .lista_nav li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-hamburguer {
+        display: block;
+    }
+}
+
+.lista_nav.active {
+    transform: translateX(0);
+    z-index: 1;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* main */
+#principal, #principal_tab2 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: #048ABF 0.112rem 0.112rem 0.312rem;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#tabs {
+    box-shadow: #048ABF 0.112rem 0.112rem 0.312rem;
+}
+
+
+
+#setores {
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: #048ABF 0.112rem 0.112rem 0.312rem;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#sec1, #sec2, #sec3, #box_vacina1, #box_vacina2 {
+    width: 45%;
+    height: 170px;
+    /* background: red; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 5%;
+    background-color: #0367A6;
+    color: #daeaff;
+    padding: 0 20px 20px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    box-shadow: #048ABF 0.312rem 0.312rem 0.312rem;
+}
+
+#sec3 {
+    height: 150px;
+    flex: 30%;
+    background-color: #daeaff;
+    padding: 20px;
+    color: black;
+    flex-wrap: wrap;
+}
+
+#inp1, #inp2 {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #daeaff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#inp3 {
+    height: 35px;
+    border: none;
+    font-size: 40px;
+    background-color: transparent;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#box1t2, #box2t2 {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+#cabecalho-tabs1, #cabecalho-tabs2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-bottom: solid #A3AFBF;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: #048ABF 0.212rem 0.212rem 0.312rem;
+}
+
+#h3_sec1 {
+    width: 250px;
+    margin-top: 35px;
+}
+
+#h3_sec2 {
+    width: 250px;
+    margin-top: 35px;
+}
+
+#publicos, #imobiliarias, #concessionarias, #escritorios, #bares, #comercio, #shopping, #beleza, #academia, #teatro, #eventos, #educacao_Transp {
+    width: 20%;
+    height: 90px;
+    /* background: hsl(0, 100%, 85%); */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 16%;
+    /* background-color: #0367A6; */
+    background-color: #daeaff;
+    padding: 0 20px 20px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    box-shadow: #048ABF 0.312rem 0.312rem 0.312rem;
+}
+
+footer {
+    height: 35vh;
+    padding: 10vh;
+    background-color: #0487D9;
+    display: flex;
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#logo_footer {
+    height: 20vh;
+}
+
+.divs_footer {
+    width: 30vw;
+    margin-left: 8vh;
+    color: white;
+}
+
+#horario {
+    font-size: 2.5vh;
+    width: 15vw;
+}
+
+#mapa {
+    width: 23vw;
+    height: 23vh;
+}
+
+#links_footer {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+}
+
+#links_footer:hover {
+    background-color: #5aaee2;
+    border-radius: 1vh;
+    padding: 1vh;
+}
+
+#div_links p, #div_links a, #date {
+    margin: 2vw;
+}
+
+#div_links p {
+    margin-left: 6vw;
+}
+
+#date {
+    font-size: 4vh;
+    margin-left: 2.5vw;
+}

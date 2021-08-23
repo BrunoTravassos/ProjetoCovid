@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno, Carolinna, Elis, Margareth e Ricardo">
+    <title>Coronavírus</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https:/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="principal"> 
+        <header class="header0">
+            <nav>
+                <a class="logo" href="#"><img src="./img/logo_teste.png" alt="" id="logo_img"></a>
+                <div class="menu-hamburguer">
+                    <div id="lin1"></div>
+                    <div id="lin2"></div>
+                    <div id="lin3"></div>
+                </div>
+                <ul class="lista_nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="cadastro.html">Cadastro de Vacinação</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="informacoes.html">Informações</a></li>
+                </ul>
+            </nav>
+            </nav>
+                 <button type="button" class="botaoFonte" value="A+" id="acessib_aumenta"
+                    onclick="aumenta_fonte()">A+</button>
+                <button type="button" class="botaoFonte" value="A-" id="acessib_diminui"
+                    onclick="diminui_fonte()">A-</button> 
+
+                <div id="dialog" title="ALERTA">
+                    <p>
+                        <img class="caixa_dialogo_img" src="./img/Alerta.jpeg">
+                    </p>
+                </div>    
+            </section>
+        </header>
+        <main>
+
+            <Section class="caixaflex">
+                <div id="Msg">
+                    <h1>Covid-19</h1>
+                    <p class="central">A Covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente
+                        grave, de elevada transmissibilidade e de distribuição global.
+                        <br></br>
+                        O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de
+                        pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, China, em
+                        dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo
+                        coronavírus conhecido a infectar seres humanos.
+                        <br></br>
+                        Os coronavírus são uma grande família de vírus comuns em muitas espécies diferentes de animais,
+                        incluindo o homem, camelos, gado, gatos e morcegos. Raramente os coronavírus de animais podem
+                        infectar pessoas e depois se espalhar entre seres humanos como já ocorreu com o MERS-CoV e o
+                        SARS-CoV-2. Até o momento, não foi definido o reservatório silvestre do SARS-CoV-2.
+                    </p>
+                </div>
+                <br>
+                <div class="item1">
+                    <img class="IMG" src="./img/Vacinação_noticias.jpg" alt="responsabilidade">
+                    <h2><strong>Fase emergencial</strong></h2>
+                    <br>
+                    <p id="p_item1">
+                        Outras proibições da fase emergencial acabaram incorporadas à etapa vermelha e continuam em
+                        vigor a partir da próxima segunda. Além do toque de recolher noturno e do veto a celebrações
+                        religiosas coletivas, o Governo de São Paulo manteve a recomendação de escalonamento de horários
+                        de entrada e saída para trabalhadores da indústria, serviços e comércio.
+                    </p>
+                        <br>
+                        <button class="saibamais" id="saibamais"> Saiba Mais </button>
+                </div>
+                <div class="item2">
+                    <img class="IMG" src="./img/idosos.jpg" alt="Etica">
+                    <h2><strong> Combate adotados</strong></h2>
+                    <br>
+                    <p id="p_item2">
+                        O Governo Federal vem adotando medidas urgentes em função da emergência de saúde pública de
+                        importância internacional decorrente do coronavírus. O objetivo é canalizar a atuação dos órgãos
+                        e instituções públicas na luta contra a pandemia.
+                        <br>
+                        Os esforços para conter a expansão do novo coronavírus continuam, e a manutenção das medidas preventivas é fundamental. Usar máscara de proteção, manter os cuidados básicos de higiene e evitar aglomerações, mesmo com a flexibilização do isolamento, são medidas imprescindíveis enquanto perdurar a pandemia.
+                    </p>
+                    <br>
+                    <button class="saibamais"> Saiba Mais </button>
+                </div>
+                <div class="item3">
+                    <img class="IMG" src="./img/emergencia.jpg" alt="Vacinação">
+                    <h2><strong>OMS descarta necessidade de terceira dose anticovid atualmente</strong></h2>
+                    <br>
+                    <p id="p_item3">
+                        A Organização Mundial da Saúde (OMS) denunciou, nesta quarta-feira (18), o avanço dos países
+                        ricos para a terceira dose da vacina anticovid e afirmou que os dados não demonstram a
+                        necessidade de administrar uma dose de reforço agora.
+                    </p>
+                    <br>
+                    <button class="saibamais"> Saiba Mais </button>
+                    <br>
+                </div>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Vacinas - Covid-19</a></li>
+                        <li><a href="#tabs-2">Medicamentos aprovados para tratamento da Covid-19</a></li>
+                        <li><a href="#tabs-3">Produtos Irregulares</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h4>Covax Facility</h4>
+                        <p>O Covax Facility é um dos caminhos para a entrada de vacinas contra Covid no país e independe
+                            da existência de registro ou autorização no país. Assim, as vacinas aprovadas pelo OMS
+                            (Organização Mundial de Saúde) para o consórcio estão aptas a entrar no Brasil.
+                            <br></br>
+                            O Covax Facility é uma aliança internacional conduzida pela OMS, entre outras organizações,
+                            com o objetivo de acelerar o desenvolvimento e a produção de vacinas contra Covid-19 e
+                            garantir o acesso igualitário à imunização em todo o mundo. Mais de 150 países aderiram à
+                            iniciativa. A admissão do Brasil, que foi assinada em 25 de setembro de 2020, inclui o
+                            acesso a 42,5 milhões de doses.
+                            <br></br>
+                            A Resolução da Diretoria Colegiada (RDC) 465/2021, de 9 de fevereiro de 2021, estabelece a
+                            dispensa de registro e da autorização de uso emergencial e os procedimentos para importação
+                            e monitoramento das vacinas Covid-19 adquiridas pelo Ministério da Saúde, no âmbito do
+                            Instrumento de Acesso Global de Vacinas Covid-19 (Covax Facility).
+                        </p>
+                    </div>
+                    <div id="tabs-2">
+                        <h4>Rendesivir</h4>
+                        <p>Registro concedido em 12/03/2021.
+                            O que é: antiviral injetável produzido no formato de pó para diluição, produzido pelo
+                            laboratório Gilead. A substância impede a replicação do vírus no organismo, diminuindo o
+                            processo de infecção.
+                            <br></br>
+                            Indicação: para o tratamento da doença causada pelo coronavírus de 2019 (COVID-19) em
+                            adultos e adolescentes (com idade igual ou superior a 12 anos e com peso corporal de, pelo
+                            menos, 40 kg). O medicamento somente será administrado para pacientes com pneumonia que
+                            precisam de oxigênio extra para ajudá-los a respirar, mas que não estejam sob ventilação
+                            artificial (quando são usados meios mecânicos para auxiliar ou substituir a respiração
+                            espontânea).
+                            <br></br>
+                            Aplicação: O medicamento não deve ser vendido em farmácias: é indicado para uso hospitalar,
+                            onde os pacientes podem ser devidamente monitorados pela equipe médica.
+
+                        </p>
+                        <br></br>
+                        <h4>Rendesivir</h4>
+                        <p>
+                            O que é: anticorpo monoclonal, ou seja, um produto biológico produzido em laboratórios e que
+                            reproduz anticorpos que ajudam o organismo no combate a alguma doença específica. É
+                            importante destacar que esses anticorpos não previnem a doença.
+                            <br></br>
+                            O alto risco, na bula do medicamento, envolve pacientes que atendam a pelo menos um dos
+                            seguintes critérios:
+                        <ul>
+                            <li> Tenham índice de massa corporal (IMC) ≥35. </li>
+                            <li>Tenham doença renal crônica. </li>
+                            <li>Tenham diabetes. </li>
+                            <li>Tenham doença imunossupressora.</li>
+                            <li>Estejam recebendo tratamento imunossupressor no momento.</li>
+                            <li> Possuam 65 anos de idade ou mais.</li>
+                            <li>Possuam 65 anos de idade ou mais.</li>
+                            <li> Possuam 55 anos de idade ou mais e tenham: 1. doença cardiovascular ou hipertensão; OU
+                                2. doença pulmonar obstrutiva crônica ou outra doença respiratória crônica.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div id="tabs-3">
+                        <h4>Fiscalizaçao</h4>
+                        <p>Para facilitar a consulta aos produtos irregulares utilizados para o enfrentamento da
+                            Covid-19, a Anvisa reuniu em um painel analítico todos os produtos e as medidas restritivas
+                            adotadas para proteger a saúde da população e dos profissionais de saúde.
+                            <br></br>
+                            O painel informa o nome/modelo/lote do produto, a medida preventiva adotada pela Anvisa,
+                            fornece link para a publicação no diário oficial e informa se a medida encontra-se ativa ou
+                            inativa. Além disso, permite a realização de busca por tipo de produto e apresenta gráficos
+                            que facilitam a visualização e comparação dos dados.
+                        </p>
+                        <br></br>
+                        <p>
+                        <h5>Como Notificar</h5>
+                        <br></br>
+                        É importante ressaltar que é essencial que os profissionais de saúde notifiquem para a Anvisa os
+                        eventuais problemas identificados durante o uso dos produtos da Covid-19. Saiba aqui como
+                        notificar.
+                        <br></br>
+                        Os dados das notificações são recebidos pela Agência e avaliados para fornecer subsídios
+                        necessários ao planejamento e à execução de ações de campo, fiscalização, inspeções e coletas de
+                        amostras para análises fiscais.
+
+                        </p>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="divs_footer">
+                <img src="./img/logo.png" alt="" id="logo_footer">
+                <p id="horario"><b>Horário de funcionamento</b><br>
+                    Segunda à Sexta das 8h00 às 12h00 - 13h00 às 17h00</p>
+            </div>
+            <div class="divs_footer" id="div_links">
+                <p><b>REDES SOCIAIS</b><br>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                    <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                    <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+                </div>
+                </p>
+                <span id="date"></span>
+            </div>
+            <div class="divs_footer">
+                <p><b>LOCALIZAÇÃO</b></p>
+                <iframe id="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241800.1143953087!2d-38.59876785890574!3d-12.918372750139989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604dc8d54f173%3A0x2d217c80cddf77fe!2sPrefeitura%20Municipal%20de%20Salvador!5e0!3m2!1spt-BR!2sbr!4v1629514077830!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <!-- <script src="js/menu_hamburger.js"></script> -->
+        <script src="./js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="cadastro.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno, Carolinna, Elis, Margareth e Ricardo">
+    <!-- <link rel="stylesheet" href="cadastro.css"> -->
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="https:/resources/demos/style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#"><img src="img/logo_teste.png" alt="" id="logo_img"></a>
+            <div class="menu-hamburguer">
+                <div id="lin1"></div>
+                <div id="lin2"></div>
+                <div id="lin3"></div>
+            </div>
+            <ul class="lista_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="cadastro.html">Cadastro de Vacinação</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="accordion">
+            <h3>A vacina é gratuita?</h3>
+            <div>
+                <p>
+                    Sim. A vacina é disponibilizada pelo Sistema Único de Saúde (SUS).
+                </p>
+            </div>
+            <h3>A vacina é obrigatória?</h3>
+            <div>
+                <p>
+                    Não. As vacinas nunca são obrigatórias no país. Mas existem restrições da vida civil, como para
+                    concursos públicos, inscrição no Bolsa Família e viagens internacionais.
+                </p>
+            </div>
+            <h3>Pode-se escolher marca da vacina para se vacinar?</h3>
+            <div>
+                <p>
+                    Não.
+                </p>
+            </div>
+            <h3>Por que as cidades vacinam idosos de idades diferentes?</h3>
+            <div>
+                <p>
+                    Porque depende do ritmo de vacinação de cada município. O Ministério da Saúde envia os lotes ao
+                    Estado,
+                    que distribui aos municípios e as prefeituras aplicam.
+                    Na medida em que o município completa a faixa etária indicada, pode avançar para a próxima faixa.
+                    Essas
+                    diferenças entre os municípios ocorrem, por exemplo, em função da velocidade de aplicação, tamanho
+                    do
+                    grupo a ser vacinado e outros fatores.
+                </p>
+            </div>
+            <h3>Quais os efeitos adversos que as vacinas podem causar?</h3>
+            <div>
+                <p>
+                    Isso vai depender de qual vacina estamos falando. Cada estudo clínico avalia as possibilidades de
+                    efeitos adversos causados pela vacina em análise.
+                <ul>
+                    <li>Oxford/AstraZeneca: Sensibilidade no local da injeção, dor local, dor de cabeça, fadiga,
+                        mialgia,
+                        mal-estar, febre, calafrios e artralgia, náusea. A maioria das reações adversas foram leves
+                        a
+                        moderadas
+                        e se resolveram dentro de poucos dias após a vacinação. As reações adversas foram menos
+                        frequentes após
+                        a segunda dose do que a primeira.</li>
+                    <li>Coronavac: No local da injeção, podem aparecer os seguintes sintomas: dor, inchaço,
+                        vermelhidão, caroço
+                        duro, coceira, mancha roxa e infecções no local. O vacinado também pode apresentar dor de
+                        cabeça, dor
+                        nos músculos, diarreia, náusea, cansaço e, mais raramente, febre.</li>
+                </ul>
+                </p>
+            </div>
+            <h3>Portadores de doenças autoimunes podem tomar a vacina contra o coronavírus?</h3>
+            <div>
+                <p>
+                    Preferencialmente, o paciente deve ser vacinado estando com a doença controlada ou em remissão, como
+                    também em baixo grau de imunossupressão ou sem imunossupressão. Essa não é uma condição
+                    imprescindível
+                    para que o paciente seja vacinado, mas um cenário ideal. Em outras situações, é fundamental discutir
+                    com
+                    um médico qual o melhor momento para a vacinação.
+                </p>
+            </div>
+        </div>
+        <form action="">
+            <label for="nome"></label><br>
+            <input type="text" id="nome" placeholder="Nome completo*"><br>
+
+            <label for="cpf"></label><br>
+            <input type="text" id="cpf" placeholder="CPF*"><br>
+
+
+            <label for="SUS"></label><br>
+            <input type="text" id="SUS" maxlength="15" placeholder="Numero do cartão do SUS*"> <br>
+
+
+            <label for="idade"></label> <br>
+            <input type="date" name="" id="idade" placeholder="Data de Nascimento*"><br>
+
+            <label for="email" placeholder="E-mail"></label><br>
+            <input type="email" name="" id="email" placeholder="Email*"><br>
+
+            <label for="sex"></label><br>
+            <select name="sex" id="sex">
+                <option value="default">Sexo*</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="naoinfo">Não informar</option>
+            </select>
+            <div id="gravidezdiv">
+                <p>Está em período de gravidez?</p>
+                  <input type="radio" id="simg" name="gravidez" value="simg">
+                  <label for="simg">Sim</label><br>
+                  <input type="radio" id="naog" name="gravidez" value="naog">
+                  <label for="naog">Não</label><br>
+            </div> <br>
+
+            <label for="comorbidade"></label><br>
+            <select id="comorbidade" name="Comorbidade" required>
+                <option value="" disabled selected hidden>Comorbidade*</option>
+                <option value="0">Não tenho</option>
+                <option value="1">Diabetes</option>
+                <option value="2">Doença cardiovascular</option>
+                <option value="3">Doença neurológica</option>
+                <option value="4">Doença renal crônica</option>
+                <option value="5">Imunocomprometidos (HIV, transplantados, pacientes oncológicos)
+                </option>
+                <option value="6">Doença falciforme</option>
+                <option value="7">Talassemia maior</option>
+                <option value="8">Obesidade</option>
+                <option value="9">Síndrome de down</option>
+                <option value="12">Outra (favor verificar a lista prioridade de vacina)</option>
+            </select> <br>
+            <label for="profissao"></label> <br>
+            <select id="profissao" name="profissao" onblur="Element(this)" required>
+                <option value="0" disabled selected hidden>Profissão*</option>
+                <option value="1">Profissional da saude</option>
+                <option value="2">Biologo (a)</option>
+                <option value="3">Biomedico (a)</option>
+                <option value="4">Farmaceutico (a)</option>
+                <option value="5">Assistente social</option>
+                <option value="6">Profissional de segurança publica</option>
+                <option value="7">Médico/técnico veterinário (a)</option>
+                <option value="8">Funcionário (a) do sistema funerário</option>
+                <option value="9">Trabalhador de transporte coletivo/urbano</option>
+                <option value="10">Trabalhador de transporte aereo</option>
+                <option value="11">Caminhoneiro</option>
+                <option value="12">Outra</option>
+            </select><br>
+            <label for="peso"></label><br>
+            <input type="text" id="peso" maxlength="3" placeholder="Peso*"><br>
+            <label for="altura"></label><br>
+            <input type="text" id="altura" maxlength="4" placeholder="Altura*"><br>
+            <label for="etnia"></label><br>
+            <select id="etnia" name="etnia" onblur="Element(this)" required>
+                <option value="" disabled selected hidden>Etnia*</option>
+                <option value="Branco">Branco</option>
+                <option value="Preto">Preto</option>
+                <option value="Pardo">Pardo</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Indigena">Indigena</option>
+                <option value="Nao informado">Não informado</option>
+            </select><br>
+            <div class="overSelect"></div>
+            </div>
+            <form>
+                <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select id="vacina">
+                            <option>Marque as vacinas que você já recebeu*</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                    <div id="checkboxes">
+                        <label for="one">
+                            <input type="checkbox" id="one" />Difteria e Tétano</label>
+                        <label for="two">
+                            <input type="checkbox" id="two" />Tríplice-viral (sarampo, caxumba e
+                            rubéola)</label>
+                        <label for="three">
+                            <input type="checkbox" id="three" />Hepatite B</label>
+                        <label for="for">
+                            <input type="checkbox" id="for" />Pneumonia</label>
+                        <label for="five">
+                            <input type="checkbox" id="five" />Febre amarela</label>
+                        <label for="six">
+                            <input type="checkbox" id="six" />Influenza (gripe)</label>
+                        <label for="seven">
+                            <input type="checkbox" id="seven" />HPV</label>
+                        <label for="eight">
+                            <input type="checkbox" id="eight" />Herpes Zóster</label> <br>
+                    </div>
+                    <br>
+                </div>
+            </form>
+            <button id="btnenviar">Cadastrar</button>
+            <div id="barra">
+                <div id="green"></div>
+            </div>
+        </form>
+        <div id="resultado"></div>
+
+
+    </main>
+    <!--inicio do footer-->
+    <footer>
+        <div class="divs_footer">
+            <img src="img/logo.png" alt="" id="logo_footer">
+            <p id="horario"><b>Horário de funcionamento</b><br>
+                Segunda à Sexta das 8h00 às 12h00 - 13h00 às 17h00</p>
+        </div>
+        <div class="divs_footer" id="div_links">
+            <p><b>REDES SOCIAIS</b><br>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                <a href="#"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+            </div>
+            </p>
+            <span id="date"></span>
+        </div>
+        <div class="divs_footer">
+            <p><b>LOCALIZAÇÃO</b></p>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241800.1143953087!2d-38.59876785890574!3d-12.918372750139989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604dc8d54f173%3A0x2d217c80cddf77fe!2sPrefeitura%20Municipal%20de%20Salvador!5e0!3m2!1spt-BR!2sbr!4v1629514077830!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="js/cadastro.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="https:/resources/demos/style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
